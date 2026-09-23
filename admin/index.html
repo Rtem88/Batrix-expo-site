@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Batrix admin workspace" />
+  <title>Batrix Control Room</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar">
+      <a class="brand" href="#dashboard"><span class="brand-mark">B</span><span><strong>BATRIX</strong><small>control room</small></span></a>
+      <div class="workspace"><span class="pulse"></span><span>Production site</span><button aria-label="Switch workspace">⌄</button></div>
+      <nav aria-label="Адмін-навігація">
+        <p class="nav-label">Огляд</p>
+        <a class="nav-item active" href="#dashboard" data-view="dashboard"><span>⌂</span> Dashboard</a>
+        <a class="nav-item" href="#content" data-view="content"><span>▤</span> Контент сайту</a>
+        <a class="nav-item" href="#leads" data-view="leads"><span>♧</span> Заявки <b class="count">12</b></a>
+        <p class="nav-label">Зростання</p>
+        <a class="nav-item" href="#seo" data-view="seo"><span>⌕</span> SEO & sitemap</a>
+        <a class="nav-item" href="#analytics" data-view="analytics"><span>↗</span> Аналітика</a>
+        <p class="nav-label">Система</p>
+        <a class="nav-item" href="#ai" data-view="ai"><span>✦</span> AI studio</a>
+        <a class="nav-item" href="#channels" data-view="channels"><span>⌁</span> Соціальні канали</a>
+        <a class="nav-item" href="#settings" data-view="settings"><span>⚙</span> Налаштування</a>
+      </nav>
+      <div class="sidebar-footer"><div class="avatar">М</div><div><strong>Марія Коваль</strong><small>Адміністратор</small></div><button aria-label="Меню профілю">•••</button></div>
+    </aside>
+    <main class="main">
+      <header class="topbar"><div class="crumbs"><span>Workspace</span><b>/</b><strong id="page-name">Dashboard</strong></div><div class="top-actions"><button class="icon-btn" title="Пошук">⌕</button><button class="icon-btn" title="Сповіщення">♢<i></i></button><a class="site-link" href="../" target="_blank">Відкрити сайт ↗</a></div></header>
+      <div id="app" class="content"></div>
+    </main>
+  </div>
+  <script src="./app.js"></script>
+</body>
+</html>
