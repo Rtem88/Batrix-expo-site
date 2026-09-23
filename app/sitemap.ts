@@ -1,0 +1,2 @@
+import type { MetadataRoute } from 'next'
+export default function sitemap():MetadataRoute.Sitemap{const base=process.env.NEXT_PUBLIC_SITE_URL||'https://batrix-expo-site.vercel.app';return [{url:base,lastModified:new Date()},{url:`${base}/admin`,lastModified:new Date()}]}
